@@ -16,6 +16,5 @@ To configure Typescript in your project, you must follow a few steps, found belo
 
   ## Your project is now set up and ready to use.
   aaaa
-aaaaaa
   
 
