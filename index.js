@@ -3,3 +3,4 @@ const soma = (a, b) => {
 }
 
 soma(1, 1)
+soma("Jeff", "Lucas")
