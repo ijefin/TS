@@ -17,6 +17,10 @@ const outraPessoa: Pessoa = {
   idade: 15,
 };
 
-const teste: Array<Pessoa> = [pessoa, outraPessoa];
+const arrayDePessoas: Array<Pessoa> = [pessoa, outraPessoa];
 
-const nome = teste.map((item) => console.log(item.nome));
+const nome = arrayDePessoas.map((item) => console.log(item.nome));
+
+const arrayNum: Array<number> = [1, 2, 3, 4, 5];
+
+const arrayDeString: string[] = ["Jefferson", "Carlos", "Pedro"];
