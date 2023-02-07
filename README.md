@@ -8,7 +8,7 @@ To configure Typescript in your project, you must follow a few steps, found belo
 
 - Install typescript globally on your system using `npm i -g typescript`.
 
-- For your project, you must install typescript as dev dependency, to do it, use `npm i -D typescript`.
+- You must install typescript as dev dependency, to do it, use `npm i -D typescript`.
 
 - At this point, you'll also need to install one more dependency to make your typescript work, `npm i -D ts-node-dev`.
 
