@@ -1,9 +1,12 @@
-const user = {
-  name: "Jeff",
-  age: 23,
-  showInfo: () => {
-    console.log(user.name, user.age);
-  },
-};
+class User {
+  name: string = "Jefferson";
+  age: number = 23;
 
-user.showInfo();
+  showInfo = () => {
+    console.log(`Your name: ${this.name}\nYour age: ${this.age}`);
+  };
+}
+
+const Jeff = new User();
+
+Jeff.showInfo();
