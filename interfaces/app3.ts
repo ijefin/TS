@@ -19,3 +19,5 @@ for (let i = 0; i < arrayString.length; i++) {
 }
 
 //find - stops and returns the first element that satisfies the given condition
+
+const find = array.find(num => num > 3)
