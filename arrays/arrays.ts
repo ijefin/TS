@@ -1,4 +1,4 @@
-const array: Array<number> = [1, 2, 3, 4, 5];
+const array: Array<number> = [1, 3, 5];
 
 const arrayString: string[] = [
   "Jeff",
@@ -19,5 +19,9 @@ for (let i = 0; i < arrayString.length; i++) {
 }
 
 //find - stops and returns the first element that satisfies the given condition
+const find = array.find((num) => num > 3);
+console.log(find);
 
-const find = array.find(num => num > 3)
+//every - loop through the entire array and check if all items pass the given condition
+const every = array.every((num) => num % 1 === 0);
+console.log(every);
