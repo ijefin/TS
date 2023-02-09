@@ -1,4 +1,4 @@
-class Conta {
+abstract class Conta {
   usuario: string;
   numero: number;
   saldo: number;
@@ -21,8 +21,18 @@ class Conta {
   };
 }
 
-const usuario1: Conta = new Conta("Jefferson Gomes", 50812, 500);
-console.log(usuario1);
+class contaFisica extends Conta {
+  identidade: number;
+  constructor(
+    identidade: number,
+    usuario: string,
+    numero: number,
+    saldo: number
+  ) {
+    super(usuario, numero, saldo);
+    this.identidade = identidade;
+  }
+}
 
-const usuario2: Conta = new Conta("Anna Luiza Gomes", 50813, 200);
-console.log(usuario2);
+const contaFisica1: contaFisica = new contaFisica(1, "Jeff", 2032, 2000);
+console.log(contaFisica1);
