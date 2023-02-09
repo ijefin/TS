@@ -1,25 +1,18 @@
 class Conta {
   usuario: string;
   numero: number;
+  saldo: number;
 
-  constructor(usuario: string, numero: number) {
-    (this.usuario = usuario), (this.numero = numero);
+  constructor(usuario: string, numero: number, saldo: number) {
+    (this.usuario = usuario), (this.numero = numero), (this.saldo = saldo);
   }
 
   depositar = (valor: number) => {
     console.log(`Você depositou ${valor}`);
   };
-}
 
-class AdminUser extends Conta {
-  saldo: number;
-
-  constructor(usuario: string, numero: number) {
-    super(usuario, numero);
-    this.saldo = 20;
-  }
-
-  transferir = (valor: number) => {
+  transferir = (valor: number, conta: number) => {
+    valor;
     console.log(`Você transferiu ${valor}`);
   };
 
@@ -28,8 +21,8 @@ class AdminUser extends Conta {
   };
 }
 
-const usuario1: Conta = new Conta("Jefferson Gomes", 50812);
+const usuario1: Conta = new Conta("Jefferson Gomes", 50812, 500);
 console.log(usuario1);
 
-const newAdmin: AdminUser = new AdminUser("Jefferson Lucas Gomes", 50813);
-console.log(newAdmin);
+const usuario2: Conta = new Conta("Anna Luiza Gomes", 50813, 200);
+console.log(usuario2);
