@@ -1,12 +1,7 @@
 class ContaFisica extends Conta {
   identidade: number;
-  constructor(
-    identidade: number,
-    usuario: string,
-    numero: number,
-    saldo: number
-  ) {
-    super(usuario, numero, saldo);
+  constructor(identidade: number, usuario: string, numero: number) {
+    super(usuario, numero);
     this.identidade = identidade;
   }
 }
