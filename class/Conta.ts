@@ -1,4 +1,4 @@
-abstract class Conta {
+export abstract class Conta {
   usuario: string;
   numero: number;
   saldo: number = 0;
@@ -7,16 +7,16 @@ abstract class Conta {
     (this.usuario = usuario), (this.numero = numero);
   }
 
-  depositar = (valor: number) => {
+  depositar = (valor: number): void => {
     console.log(`Você depositou ${valor}`);
   };
 
-  transferir = (valor: number, conta: number) => {
+  transferir = (valor: number, conta: number): void => {
     valor;
     console.log(`Você transferiu ${valor} para ${conta}`);
   };
 
-  sacar = (valor: number) => {
+  sacar = (valor: number): void => {
     console.log(`Você sacou ${valor}`);
   };
 }
