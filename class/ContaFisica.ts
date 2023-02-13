@@ -6,4 +6,6 @@ export class ContaFisica extends Conta {
     super(usuario, numero);
     this.identidade = identidade;
   }
+
+
 }
