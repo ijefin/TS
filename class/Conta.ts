@@ -1,8 +1,8 @@
 export abstract class Conta {
   private usuario: string;
-  numero: number;
+  readonly numero: number;
   saldo: number = 0;
-  status: boolean = true;
+  private status: boolean = false;
 
   constructor(usuario: string, numero: number) {
     (this.usuario = usuario), (this.numero = numero);
@@ -31,6 +31,10 @@ export abstract class Conta {
     this.usuario = novoNome;
     return novoNome;
   };
+
+  // setNumero = (): void => {
+  //   this.numero = 10;
+  // };
 
   validateStatus = (): boolean => {
     if (this.status) {
