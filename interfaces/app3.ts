@@ -12,4 +12,8 @@ const arrayString: string[] = [
   "Carlo",
 ];
 
-console.log(arrayString.length)
+console.log(arrayString.length);
+
+for (let i = 0; i < arrayString.length; i++) {
+  console.log(arrayString[i] === "Jeff");
+}
