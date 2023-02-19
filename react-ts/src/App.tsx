@@ -1,13 +1,18 @@
-import "./App.css";
-import { Card } from "./components/Card";
+import { Layout } from "./components/Layout";
 
 function App() {
   return (
     <>
-      <Card cardId={1} stack="Front-end" menu="GO!"></Card>
-      <Card cardId={2} stack="Back-end" menu="GO!"></Card>
-      <Card cardId={3} stack="DBA" menu="GO!"></Card>
-      <Card cardId={4} stack="DevOPS" menu="GO!"></Card>
+      <Layout>
+        <div className="login-content">
+          <h1>Faça login para continuar!</h1>
+          <label htmlFor="email">Email</label>
+          <input id="email" type="text" />
+          <label htmlFor="Senha">Senha</label>
+          <input id="password" type="password" />
+          <button>Entrar</button>
+        </div>
+      </Layout>
     </>
   );
 }
