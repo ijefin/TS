@@ -22,4 +22,4 @@ To configure Typescript in your project, you must follow a few steps, found belo
       `"dev": "ts-node-dev app.ts",`
 
      `},`
-     and you can run using `npm run dev` or `yarn dev`.g
+     and you can run using `npm run dev` or `yarn dev`
