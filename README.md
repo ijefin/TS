@@ -15,11 +15,14 @@ To configure Typescript in your project, you must follow a few steps, found belo
 - And the setup has been done! To initialize typescript in your project, just type `npx tsc --init` (you can configure your `package.json` scripts to facilitate).
 
   ## Your project is now set up and ready to use.
-  - To easily run your files without transpile and generate a lot of files, just paste this on your `package.json scripts`
-
-     `"scripts": {`
-
-      `"dev": "ts-node-dev app.ts",`
-
-     `},`
+  - To easily run your files without transpile and generate a lot of files, just paste this on your package.json scripts.
+     
+     
+     ```json
+     "scripts": {
+     	"dev": "ts-node-dev YOURFILE/FOLDER/NAME",
+     	"test": "echo \"Error: no test specified\" && exit 1"
+     },
+     ```
+     
      and you can run using `npm run dev` or `yarn dev`
