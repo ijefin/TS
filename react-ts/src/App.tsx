@@ -32,6 +32,7 @@ function App() {
         <Input value={inputValue} onChange={getValue} type={`text`}></Input>
         <h1>{inputValue}</h1>
         <Button onClick={showToast}>Show!</Button>
+        <Button onClick={() => Login(inputValue)}>Show!</Button>
       </ChakraProvider>
     </>
   );
