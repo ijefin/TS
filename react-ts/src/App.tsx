@@ -1,27 +1,19 @@
-import { Layout } from "./components/Layout";
-import styled from "styled-components";
-import { ChakraProvider } from "@chakra-ui/react";
-
-const Box = styled.div`
-  background-color: orange;
-`;
+import { ChakraProvider, Input, Box, Center } from "@chakra-ui/react";
 
 function App() {
   return (
     <>
       <ChakraProvider>
-        <Layout>
-          <div className="login-content">
-            <Box>
-              <h1>Faça login para continuar!</h1>
-            </Box>
-            <label htmlFor="email">Email</label>
-            <input id="email" type="text" />
-            <label htmlFor="Senha">Senha</label>
-            <input id="password" type="password" />
-            <button>Entrar</button>
-          </div>
-        </Layout>
+        <Box minHeight={`100vh`} backgroundColor={`#ee6521e2`}>
+          <Center>
+            <h1>Faça login para continuar!</h1>
+          </Center>
+
+          <Input size={"sm"} placeholder={`Seu email`} />
+          <Input size={"sm"} placeholder={`Sua senha`} />
+
+          <button>Entrar</button>
+        </Box>
       </ChakraProvider>
     </>
   );
