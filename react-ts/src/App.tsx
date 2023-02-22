@@ -1,4 +1,5 @@
 import { ChakraProvider, Input, Box, Center } from "@chakra-ui/react";
+import { Login } from "./services/login/Login";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <Input size={"sm"} placeholder={`Seu email`} />
           <Input size={"sm"} placeholder={`Sua senha`} />
 
-          <button>Entrar</button>
+          <button onClick={Login}>Entrar</button>
         </Box>
       </ChakraProvider>
     </>
